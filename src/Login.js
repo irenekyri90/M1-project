@@ -5,7 +5,7 @@ class Login {
     this.emailInput = document.querySelector("#email");
     this.passwordInput = document.querySelector("#password");
     this.messageContainer = document.querySelector(".message-container");
-    this.loginButton = document.querySelector("#login-button");
+    this.loginButton = document.querySelector("#login-btn");
   }
 
   handleSubmit = (event) => {
@@ -40,7 +40,7 @@ class Login {
 
   redirect = () => {
     setTimeout( function () {
-      location.assign("index.html")
+      location.assign("../index.html")
     }, 2000)
   }
 }

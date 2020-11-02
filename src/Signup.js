@@ -87,6 +87,7 @@ class Signup {
     this.signatureCocktail.value = "";
     this.emailInput.value = "";
     this.passwordInput.value = "";
+    this.redirect();
   };
 
   addListeners = () => {
@@ -94,6 +95,12 @@ class Signup {
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput);
     this.buttonInput.addEventListener("click", this.saveData);
+  }
+
+  redirect = () => {
+    setTimeout( function () {
+      location.assign("../index.html")
+    }, 2000)
   }
 
 }

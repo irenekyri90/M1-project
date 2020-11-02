@@ -20,7 +20,7 @@ header {
 .nav-container {
     height: 60px;
     background-color: #14140c;
-    border-bottom: 2px solid #a96562;  
+    /* border-bottom: 2px solid #a96562;   */
     display: flex;
     justify-content: space-between;
 }
@@ -267,6 +267,23 @@ button {
     color: white;
     width: 150px;
 
+}
+
+/*************************recipes*********************/
+
+#drinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.drink h3 {
+    /* margin: 20px; */
+    color: pink;
+}
+
+.drink img {
+    border-radius: 5%;
 }
 
 

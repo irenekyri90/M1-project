@@ -9,302 +9,390 @@ font-family: 'Roboto', sans-serif;
 
 body {
   font-family: "Montserrat", sans-serif;
-  text-align: center;
+  /* //text-align: center; */
 }
 
 /****************************nav-bar******************/
 
-  .nav-container {
-    height: 60px;
-    background-color: #14140c;
-    /* border-bottom: 2px solid #a96562;   */
+.nav-container {
+  height: 60px;
+  background-color: #14140c;
+  /* border-bottom: 2px solid #a96562;   */
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+/* span { */
+/* color: #9ebc99; */
+/* color: #e86741; */
+/* border-width: 0.5px; */
+/* text-decoration: underline #e86741; */
+/* } */
+
+.foldout-menu {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    height: 200px;
+    background-color: #91d8d8;
   }
+ 
+  
+/* #nav-bar-links {
+  display: none;
+} */
+#nav-bar-links > a {
+  /* display: none; */
 
-  span {
-    /* color: #9ebc99; */
-    /* color: #e86741; */
-    /* border-width: 0.5px; */ 
-    /* text-decoration: underline #e86741; */
-  }
+  /* display: block; */
+  /* z-index: 1; */
+  color: yellow;
+}
 
-  #nav-bar-links {
-    display: none; 
-  }
+.nav-icon {
+  color: white;
+  padding: 15px;
+  font-size: 27px;
+  display: block;
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+}
 
-  .nav-icon {
-    color: white;
-    padding: 15px;
-    font-size: 27px;
-  }
+#welcome-img {
+  width: 100%;
+}
 
-  #welcome-img {
-    width: 100%;
-  }
+/****************************welcome-section******************/
 
-  /****************************welcome-section******************/
+#welcome {
+  background-image: url(../images/homepage-img.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
 
-  #welcome {
-    background-image: url(../images/homepage-img.jpg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-  }
+#welcome-text {
+  text-align: center;
+  padding-top: 380px;
+  color: white;
+  text-decoration: none;
+}
 
-  #welcome-text {
-    text-align: center;
-    padding-top: 380px;
-    color: white;
-    text-decoration: none;
-  }
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    letter-spacing: 5px;
+/****************************sub-welcome-section******************/
+
+#sub-welcome {
+  height: 260px;
+  text-align: center;
+}
+
+#sub-welcome p {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  line-height: 25px;
+  color: #14140c;
+  letter-spacing: 2px;
+  /* color: #eeb810; */
+}
+
+a {
+  color: #14140c;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  /* color: #eeb810; */
+}
+
+#explore-link {
+  text-decoration: none;
+}
+
+.fa-glass-martini-alt {
+  padding-top: 30px;
+  color: #14140c;
+}
+
+/****************************carousel??*****************/
+
+/****************************footer*****************/
+
+footer {
+  height: 150px;
+  color: white;
+  background-color: #14140c;
+}
+
+.footer-div {
+  text-align: center;
+  padding: 40px;
+  line-height: 30px;
+}
+.footer-div p {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+}
+
+.footer-icon {
+  color: white;
+  padding: 15px 10px 0;
+  font-size: 0.9rem;
+}
+
+/****************************sign-up-page*****************/
+/****************************sign-up-page*****************/
+
+.signup {
+  height: 550px;
+
+}
+
+.signup h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.signup-form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  border-width: 1.5px;
+}
+
+.sign-log-btn {
+  width: 200px;
+  height: 40px;
+  background-color: #14140c;
+  border-style: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  margin-top: 15px;
+  /* box-shadow:5px 5px 15px #a96562; */
+}
+
+/****************************login-page*****************/
+/****************************login-page*****************/
+
+.login {
+  height: 550px;
+  
+}
+.login-form {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 25px;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+/****************************about-us*****************/
+/****************************about-us*****************/
+
+#about-img {
+  background-image: url(../images/about-us-cocktails.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-width: 100%; */
+  height: 300px;
+}
+
+#about-img h2 {
+  color: white;
+  padding-top: 250px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+#about-us p {
+  line-height: 25px;
+  letter-spacing: 1.2px;
+  padding-top: 30px;
+}
+
+#welcome-msg {
+  font-size: 1.5rem;
+}
+
+#about-img {
+  color: white;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+/****************************tool-section*****************/
+
+#tool-text {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 25px;
+  letter-spacing: 1.2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#tools img {
+  width: 100%;
+}
+
+#tool-img-text {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 30px;
+}
+
+#explore-btn {
+  margin-top: 20px;
+  background-color: #14140c;
+  color: white;
+  width: 150px;
+  text-decoration: none;
+}
+
+/*************************recipes*********************/
+
+#random-drink-container {
+    display: none;
+}
+
+#drinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+
+
+
+#recipes h2 {
+    font-size: 2rem;
     font-weight: 600;
-    
-  }
-
-  /****************************sub-welcome-section******************/
-
-  #sub-welcome {
-    height: 260px;
-    text-align: center;
-  }
-
-  #sub-welcome p {
-    padding-top: 50px;
-    padding-bottom: 35px;
-    line-height: 25px;
-    color: #14140c;
-    letter-spacing: 2px;
-    /* color: #eeb810; */
-  }
-
-  a {
-    color: #14140c;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-    /* color: #eeb810; */
-  }
-
-  #explore-link {
-      text-decoration: none;
-  }
-
-  .fa-glass-martini-alt {
-    padding-top: 30px;
-    color: #14140c;
-  }
-
-  /****************************carousel??*****************/
-
-  /****************************footer*****************/
-
-  footer {
-    height: 150px;
-    color: white;
-    background-color: #14140c;
-  }
-
-  .footer-div {
-    text-align: center;
     padding: 40px;
-    line-height: 30px;
-  }
-  .footer-div p {
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-  }
+}
 
-  .footer-icon {
-    color: white;
-    padding: 15px 10px 0;
-    font-size: 0.9rem;
-  }
-
-  /****************************sign-up-page*****************/
-  /****************************sign-up-page*****************/
-
-  .signup {
-    height: 550px;
-  }
-
-  .signup h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 45px;
-    padding-bottom: 15px;
-    font-weight: 600;
-  }
-
-  .signup-form {
-    height: 400px;
+#randomDiv {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+}
 
-  input {
-    width: 250px;
-    height: 30px;
-    border-width: 1.5px;
-  }
 
-  button {
-    width: 200px;
-    height: 40px;
-    background-color: #14140c;
-    border-style: none;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 200;
-    letter-spacing: 4px;
-    margin-top: 15px;
-    /* box-shadow:5px 5px 15px #a96562; */
-  }
+#randomBtn {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #white;
+    border-color: #14140c;
+}
 
-  /****************************login-page*****************/
-  /****************************login-page*****************/
+.fa-question {
+    color: #14140c;
+}
 
-  .login {
-    height: 550px;
-  }
-  .login-form {
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
 
-  .login h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 25px;
-    padding-top: 80px;
-    padding-bottom: 15px;
-    font-weight: 600;
-  }
+.drink h3 {
+  /* margin: 20px; */
+  color: #14140c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
-  /****************************about-us*****************/
-  /****************************about-us*****************/
-
-  #about-img {
-    background-image: url(../images/about-us-cocktails.jpg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-width: 100%; */
-    height: 300px;
-  }
-
-  #about-img h2 {
-    color: white;
-    padding-top: 250px;
-    font-size: 2rem;
-    letter-spacing: 3px;
-    font-weight: 500;
-  }
-
-  #about-us p {
-    line-height: 25px;
-    letter-spacing: 1.2px;
-    padding-top: 30px;
-  }
-
-  #welcome-msg {
-    font-size: 1.5rem;
-  }
-
-  #about-img {
-    color: white;
-    /* font-family: 'Roboto', sans-serif; */
-  }
-
-  /****************************tool-section*****************/
-
-  #tool-text {
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    line-height: 25px;
-    letter-spacing: 1.2px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  #tools img {
-    width: 100%;
-  }
-
-  #tool-img-text {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-    line-height: 30px;
-  }
-
-  #explore-btn {
-    margin-top: 20px;
-    background-color: #14140c;
-    color: white;
-    width: 150px;
-  }
-
-  /*************************recipes*********************/
-
-  #drinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .drink h3 {
-    /* margin: 20px; */
-    color: pink;
-  }
-
-  .drink img {
-    border-radius: 5%;
-  }
+.drink img {
+  border-radius: 5%;
+}
 
 @media (min-width: 769px) {
 
-    #nav-bar-links {
-        display: inline-block; 
-        color: white;
-      }
-    .fa-bars {
+    /**********************homepage******************/
+  #nav-bar-links {
+    /* display: inline-block; */
+    color: white;
+  }
+  /* .fa-bars {
         display: none;
-    }
+    } */
 
-    h1 {
-        font-size: 4rem;
-        letter-spacing: 10px;
-    }
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+  }
 
-    #welcome {
-        height: 500px;
-    }
-    #sub-welcome {
-        /* background-color: red; */
-    }
+  #welcome {
+    height: 500px;
+  }
+  #sub-welcome {
+    height: 400px;
+  }
+
+  #sub-welcome p {
+    padding: 70px 0 50px;
+    line-height: 40px;
+  }
+
+  #sub-welcome a h2 {
+    letter-spacing: 7px;
+  }
+
+  .fa-glass-martini-alt {
+    padding-top: 50px;
+  }
+
+/**********************about-us******************/
+
+  #about-img {
+    height: 500px;
+  }
+
+  #about-img h2 {
+    font-size: 4rem;
+  }
 
 
+/**********************tools******************/
 
+ #martini {
+     padding-top: 0;
+ }
 
-}
+/***************************recipes-desktop*****************/
+

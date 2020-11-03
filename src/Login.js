@@ -45,13 +45,9 @@ class Login {
   }
 }
 
-
-
-
 const login = new Login();
 
 window.addEventListener('load', function () {
-
-  login.loginButton.addEventListener('click', login.handleSubmit );
-
+  const loginButton = document.getElementById('login-btn');
+  loginButton.addEventListener('click', login.handleSubmit );
 } )

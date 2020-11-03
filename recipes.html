@@ -17,10 +17,10 @@
                 <i class="fas fa-cocktail nav-icon"></i>
                 <i class="fas fa-bars nav-icon"></i>
                 <div id="nav-bar-links">
-                    <a href="#">About Us</a>
-                    <a href="#">Recipes</a>
-                    <a href="#">Sign Up</a>
-                    <a href="#">Log In</a>
+                    <a href="./about-us.html">About Us</a>
+                    <a href="./recipes.html">Recipes</a>
+                    <a href="./signup.html">Sign Up</a>
+                    <a href="./login.html">Log In</a>
                 </div>
             </div>
         </nav>
@@ -28,16 +28,28 @@
 
 <!----------------------recipes------------------->
     <section id="recipes">
-        <div>
+        <div id="sub-header">
             <h2>Recipes</h2>
             <input type="text" id="filter-options" placeholder="Filter by...">
-            <h3>Random Drink Generator</h3>
-            <p>Need some inspiration? Click here to get a random cocktail recipe.</p>
-            <button type="submit">Click Me</button>
+            <div id="randomDiv">
+                
+                <p>Need some inspiration? <br> Click here to get a random cocktail recipe.</p>
+                <button id="randomBtn" type="submit"><i class="fas fa-question"></i></button>
+            </div>
         </div>
 
-        <div id="drinks">
+        <div id="random-drink-container">
+            <h2>Random Drink</h2>
+            <div id="randomDrink">
 
+            </div>
+        </div>
+        
+        <div id="recipes-container">
+            <h2>Recipes</h2>
+            <div id="drinks">
+
+            </div>
         </div>
     </section>
 
@@ -53,9 +65,8 @@
     </div>
 </footer>
 
-<script src="/src/scripts/Login.js"></script>
-<script src="/src/scripts/Database.js"></script>
 <script src="/src/cocktailsAPI.js"></script>
+<script src="/src/recipes.js"></script>
     
 </body>
 </html>

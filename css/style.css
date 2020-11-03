@@ -9,19 +9,19 @@ font-family: 'Roboto', sans-serif;
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* //text-align: center; */
+  text-align: center;
 }
 
 /****************************nav-bar******************/
 
-.nav-container {
+/* .nav-container {
   height: 60px;
   background-color: #14140c;
   /* border-bottom: 2px solid #a96562;   */
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   /* position: relative; */
-}
+
 
 /* span { */
 /* color: #9ebc99; */
@@ -29,26 +29,23 @@ body {
 /* border-width: 0.5px; */
 /* text-decoration: underline #e86741; */
 /* } */
-
+/* 
 .foldout-menu {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 200px;
     background-color: #91d8d8;
-  }
+  } */
  
   
 /* #nav-bar-links {
   display: none;
 } */
-#nav-bar-links > a {
-  /* display: none; */
-
-  /* display: block; */
-  /* z-index: 1; */
+/* #nav-bar-links {
+  display: none;
   color: yellow;
-}
+} */
 
 .nav-icon {
   color: white;
@@ -87,7 +84,9 @@ h1 {
   letter-spacing: 5px;
   font-weight: 600;
 }
-
+.bg-dark {
+    background-color: #14140c!important;
+}
 /****************************sub-welcome-section******************/
 
 #sub-welcome {
@@ -116,7 +115,19 @@ h2 {
 
 #explore-link {
   text-decoration: none;
+  color: black;
 }
+
+.grow h2 {
+    transition: all .8s ease-in-out;
+}
+
+.grow h2:hover {
+    transform: scale(1.2);
+    
+}
+
+
 
 .fa-glass-martini-alt {
   padding-top: 30px;
@@ -288,6 +299,15 @@ input {
   text-decoration: none;
 }
 
+#explore-btn {
+  transition: all .8s ease-in-out;
+}
+
+#explore-btn:hover {
+  transform: scale(1.2);
+  
+}
+
 /*************************recipes*********************/
 
 #random-drink-container {
@@ -321,12 +341,19 @@ input {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #white;
+    background-color: white;
     border-color: #14140c;
 }
 
 .fa-question {
     color: #14140c;
+}
+
+article {
+    text-align: left;
+    color: #14140c;
+    width: 320px;
+
 }
 
 

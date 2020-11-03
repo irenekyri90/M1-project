@@ -1,16 +1,40 @@
 'use strict';
 
 const toggleNavBar = () => {
-    const navBar = document.querySelector("#nav-bar-links");
-    navBar.classList.toggle("foldout-menu");
-    const foldedOutMenu = document.createElement("div");
+  const menu = document.querySelector("nav");
+  menu.classList.toggle('foldout-menu');
+  // navBar.classList.toggle("foldout-menu");
+  // const foldedOutMenu = document.createElement("div");
+  
+  // foldedOutMenu.appendChild(navBar);
+  // const parentNode= document.querySelector("header");
+  // parentNode.appendChild(foldedOutMenu);
+};
+const burgerMenuBar = document.querySelector("#burger");
+burgerMenuBar.addEventListener("click", toggleNavBar);
+
+// const menu = document.querySelector('.menu') 
+// menu.classList.toggle('hidden-phone');
+
+
+// const toggleNavBar = () => {
+//     const navBar = document.querySelector("#nav-bar-links");
+//     navBar.classList.toggle("foldout-menu");
+//     const foldedOutMenu = document.createElement("div");
     
-    foldedOutMenu.appendChild(navBar);
-    const parentNode= document.querySelector("header");
-    parentNode.appendChild(foldedOutMenu);
-  };
-  const burgerMenuBar = document.querySelector("#burger");
-  burgerMenuBar.addEventListener("click", toggleNavBar);
+//     foldedOutMenu.appendChild(navBar);
+//     const parentNode= document.querySelector("header");
+//     parentNode.appendChild(foldedOutMenu);
+//   };
+//   const burgerMenuBar = document.querySelector("#burger");
+//   burgerMenuBar.addEventListener("click", toggleNavBar);
+
+  // function myFunction() {
+  //   var element = document.getElementById("myDIV");
+  //   element.classList.toggle("mystyle");
+  // }
+
+
 
 // function dropDown () {
 //     const nav = document.querySelector('#nav-bar-links');

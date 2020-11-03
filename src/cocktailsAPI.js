@@ -1,6 +1,6 @@
 "use strict";
 
-fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a")
+fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b")
   .then(response => {
     console.log(response);
     console.log(response.ok);
@@ -50,23 +50,28 @@ function populateDrinks(data, rootId) {
     const dataInstructions = drink.strInstructions;
     const dataImage = drink.strDrinkThumb;
 
+    const drinkImg = document.createElement("img");
+    drinkImg.setAttribute("src", dataImage);
+
     const drinkNameH3 = document.createElement("h3");
 
     const ingredientsUl = document.createElement('ul');
 
     const instructionsP = document.createElement('p');
 
-    const drinkImg = document.createElement("img");
 
     drinkNameH3.innerHTML = dataDrinkName;
 
     instructionsP.innerHTML = dataInstructions;
-    drinkImg.setAttribute("src", dataImage);
-    drinkImg.width = "300"; // todo: kill
-    drinkImg.height = "300"; // todo: kill
+    
+    // drinkImg.width = "300"; // todo: kill
+    // drinkImg.height = "300"; // todo: kill
 
     const drinkArticle = document.createElement("article");
     drinkArticle.setAttribute("class", "drink");
+
+    drinkArticle.appendChild(drinkImg);
+
     drinkArticle.appendChild(drinkNameH3);
 
     drinkArticle.appendChild(ingredientsUl);
@@ -85,6 +90,8 @@ function populateDrinks(data, rootId) {
       ingredientCount = 4;
     }
 
+    
+
     for (let i = 1; i <= ingredientCount; i++) {
       const ingredientLi = document.createElement('li');
       const dataMsrIng = eval('dataMsrIng' + i);
@@ -94,7 +101,7 @@ function populateDrinks(data, rootId) {
     }
 
     drinkArticle.appendChild(instructionsP);
-    drinkArticle.appendChild(drinkImg);
+    
 
     const drinksDiv = document.getElementById(rootId);
     drinksDiv.appendChild(drinkArticle);

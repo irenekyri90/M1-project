@@ -61,8 +61,11 @@ class Validator {
       delete this.errors.repeatPasswordError;
     } else {
       this.errors.repeatPasswordError = this.repeatPasswordError;
+      //this.repeatPasswordError.classList = "alert alert-danger";
     }
   };
+
+  //alert alert-danger
 
   getErrors = () => {
     return this.errors;

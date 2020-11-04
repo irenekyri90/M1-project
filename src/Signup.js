@@ -99,7 +99,7 @@ class Signup {
 
   redirect = () => {
     setTimeout( function () {
-      location.assign("../index.html")
+      location.assign("./index.html")
     }, 2000)
   }
 

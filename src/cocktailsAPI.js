@@ -37,6 +37,12 @@ function populateByIngredient(rootId, callback) {
     callback();
   })
   .catch(err => {
+    const alert = document.querySelector('#err-msg');
+    alert.innerHTML = '';
+    const alertMessage = document.createElement('p');
+    alert.appendChild(alertMessage);
+    alertMessage.innerHTML = "Sorry, we do not have the recipe you are looking for.";
+    alertMessage.classList = "alert alert-danger";
     console.log(err);
   });
 }

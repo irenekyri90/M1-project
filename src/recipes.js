@@ -8,6 +8,9 @@ randomDrinkBtn.addEventListener("click", function () {
         const randomDrinkContainer = document.querySelector('#random-drink-container');
         randomDrinkContainer.style.display = 'block';
         console.log('yayyyyy!');
+
+        const hideBtn = document.querySelector('#hide');
+        hideBtn.style.display = 'block';
     });
 });
 
@@ -27,8 +30,24 @@ testDrinkBtn.addEventListener("click", function () {
         const testHeading = document.querySelector('#test-heading');
         testHeading.innerHTML = `${searchWord}`;
 
+        const hideBtn = document.querySelector('#hide');
+        hideBtn.style.display = 'block';
+
+        const randomDrinkContainer = document.querySelector('#random-drink-container');
+        randomDrinkContainer.style.display = 'none';
+
         console.log('yayyyyy!');
     });
 });
 
+const hideBtn = document.querySelector('#hide');
+hideBtn.addEventListener('click', function() {
+    const randomDrinkContainer = document.querySelector('#random-drink-container');
+    randomDrinkContainer.style.display = 'none';
 
+    const testContainer = document.querySelector('#test-container');
+    testContainer.style.display = 'none';
+
+    hideBtn.style.display = 'none';
+
+});

@@ -14,6 +14,36 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b")
     console.log(err);
   });
 
+///////////////////////////
+// const searchBar = document.querySelector('#search-bar');
+// const searchWord = searchBar.value;
+// console.log(`searchBar: ${searchBar}`);
+// console.log(`searchWord: ${searchWord}`);
+
+function populateByIngredient(rootId, callback) {
+
+  const searchBar = document.querySelector('#search-bar');
+  const searchWord = searchBar.value;
+
+  fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchWord}`)
+  .then(response => {
+    console.log(response);
+    console.log(response.ok);
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+    populateDrinks(data, rootId);
+    callback();
+  })
+  .catch(err => {
+    console.log(err);
+  });
+}
+
+////////////////////////
+
+
 function populateRandomDrink(rootId, callback) {
   fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
   .then(response => {

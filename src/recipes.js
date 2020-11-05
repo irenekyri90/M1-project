@@ -28,7 +28,8 @@ testDrinkBtn.addEventListener("click", function () {
         const searchBar = document.querySelector('#search-bar');
         const searchWord = searchBar.value;
         const testHeading = document.querySelector('#test-heading');
-        testHeading.innerHTML = `${searchWord}`;
+        const capSearchWord = searchWord.charAt(0).toUpperCase() + searchWord.slice(1);
+        testHeading.innerHTML = `${capSearchWord}`;
 
         const hideBtn = document.querySelector('#hide');
         hideBtn.style.display = 'block';

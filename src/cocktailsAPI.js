@@ -32,6 +32,8 @@ function populateByIngredient(rootId, callback) {
     return response.json();
   })
   .then(data => {
+    const alert = document.querySelector('#err-msg');
+    alert.innerHTML = '';
     console.log(data);
     populateDrinks(data, rootId);
     callback();

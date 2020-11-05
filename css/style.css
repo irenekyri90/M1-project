@@ -1,10 +1,3 @@
-/* body {
-    background-color: red;
-} 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-
 @import "reset.css";
 
 body {
@@ -20,9 +13,6 @@ body {
   padding: 15px;
   font-size: 27px;
   display: block;
-  /* position: absolute; */
-  /* top: 0; */
-  /* right: 0; */
 }
 
 #welcome-img {
@@ -65,30 +55,30 @@ h1 {
 #sub-welcome {
   height: 260px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
 }
 
 #sub-welcome p {
-  padding-top: 50px;
-  padding-bottom: 35px;
   line-height: 25px;
   color: #14140c;
   letter-spacing: 2px;
-  /* color: #eeb810; */
 }
 
 a {
   color: #14140c;
 }
 
-h2 {
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  /* color: #eeb810; */
-}
-
 #explore-link {
   text-decoration: none;
   color: black;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 30px;
 }
 
 .grow h2 {
@@ -96,14 +86,10 @@ h2 {
 }
 
 .grow h2:hover {
-    transform: scale(1.2);
-    
+    transform: scale(1.2);  
 }
 
-
-
 .fa-glass-martini-alt {
-  padding-top: 30px;
   color: #14140c;
 }
 
@@ -138,7 +124,6 @@ footer {
 
 .signup {
   height: 550px;
-
 }
 
 .signup h2 {
@@ -159,8 +144,8 @@ footer {
 
 input {
   width: 250px;
-  height: 30px;
-  border-width: 1.5px;
+  height: 35px;
+  border: 2px solid #B0B0B0;
 }
 
 .sign-log-btn {
@@ -170,10 +155,16 @@ input {
   border-style: none;
   color: white;
   font-size: 1.1rem;
-  font-weight: 200;
+  font-weight: 500;
   letter-spacing: 4px;
   margin-top: 15px;
-  /* box-shadow:5px 5px 15px #a96562; */
+}
+
+.sign-log-btn:hover {
+  background-color: white;
+  color: #14140c;
+  font-weight: 600;
+  border: 2px solid #14140c;
 }
 
 ::placeholder {
@@ -216,12 +207,6 @@ input {
 /****************************about-us*****************/
 /****************************about-us*****************/
 
-#about-us-text {
-  padding-left: 40px;
-  padding-right: 40px;
-  height: auto;
-}
-
 #about-img {
   /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/about-us-cocktails.jpg); */
   background-image: url(../images/about-us-cocktails.jpg);
@@ -244,44 +229,59 @@ input {
   -webkit-text-stroke-color: #6b2f23; */
 }
 
+
+#about-parent-div {
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+  
+}
+
+#about-us-text {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #about-us p {
   line-height: 25px;
   letter-spacing: 1.2px;
-  padding-top: 30px;
-  
 }
 
 #welcome-msg {
   font-size: 1.5rem;
+  line-height: 35px;
+  letter-spacing: 1.2px;
 }
 
-#about-img {
-  color: white;
-  /* font-family: 'Roboto', sans-serif; */
-}
-
-.martini-div {
-  margin-bottom: 80px;
-}
 
 /****************************tool-section*****************/
 
+
 #tool-text {
-  height: 320px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   line-height: 25px;
   letter-spacing: 1.2px;
-  padding: 20px 40px;
 
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #tool-text > h2 {
-  padding-bottom: 30px;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
 }
 
-#tools img {
+
+#tool-div img {
   width: 100%;
 }
 
@@ -290,26 +290,16 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
 
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
   line-height: 30px;
 }
 
-#tool-img-text  p {
-  margin-top: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-#tool-list {
-  padding-top: 25px;
-}
 
 #explore-btn {
-  margin-top: 35px;
-  margin-bottom: 30px;
   background-color: #14140c;
   color: white;
   width: 150px;
@@ -326,8 +316,16 @@ input {
 
 /*************************recipes*********************/
 
-#recipes {
+/* #recipes {
   background-color: white;
+} */
+
+#nav {
+  border-bottom: 1px solid white;
+}
+
+.bg-dark {
+  background-color: #010101!important;
 }
 
 #recipes-header {
@@ -346,13 +344,23 @@ input {
     /* -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black; */
     color: white;
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 40px;
+    
 }
 
-#nav {
-  border-bottom: 1px solid white;
-  background-color: black;
+#recipes-header {
+  padding: 30px;
+  
 }
+/* 
+#recipes h2 {
+
+  padding: 30px 20px auto; 
+ }   */
 
 
 
@@ -377,17 +385,12 @@ input {
   margin: 20px 20px;
 }
 
-
-/*search drink header*/
-#recipes h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    /* padding-top: 0px; */
-    padding-bottom: 10px;
-    letter-spacing: 7px;
-    
-    
+#all-recipes-container h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
+
 
 #recipes-title {
   /* padding-top: 30px; */
@@ -428,7 +431,7 @@ input {
 #search-bar {
   flex-grow: 1;
   height: 40px;
-  background-color: black;
+  background-color: #010101;
   border: 1px solid white;
   color: white;
 
@@ -436,7 +439,7 @@ input {
 
 #testBtn {
   color: white;
-  background-color: black;
+  background-color: #010101;
   border: 1px solid white;
   
   width: 100px;
@@ -451,9 +454,7 @@ input {
   font-size: 3.5rem;
   /* margin-left: 10px; */
   color: #14140c;
-  padding-top: 15px;
-  
-	        
+  padding-top: 15px;	        
 }
 
 .rotate-center {
@@ -544,18 +545,35 @@ article ul {
 
 
 /******search-bar-drinks********/
+/* 
+#sub-welcome {
+  height: 260px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+} */
+
+
+
+
+/* #explore-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 30px;
+} */
 
 
 @media (min-width: 769px) {
+  
 
     /**********************homepage******************/
-  #nav-bar-links {
-    /* display: inline-block; */
-    color: white;
-  }
-  /* .fa-bars {
-        display: none;
-    } */
+  
 
   h1 {
     font-size: 4rem;
@@ -566,21 +584,19 @@ article ul {
     height: 500px;
   }
   #sub-welcome {
-    height: 400px;
+    height: 300px;
   }
 
   #sub-welcome p {
-    padding: 70px 0 50px;
     line-height: 40px;
+    font-size: 1.2rem;
   }
 
   #sub-welcome a h2 {
     letter-spacing: 7px;
+    font-size: 1.8rem;
   }
 
-  .fa-glass-martini-alt {
-    padding-top: 50px;
-  }
 
 /**********************about-us******************/
 
@@ -589,33 +605,70 @@ article ul {
   }
 
   #about-img h2 {
+    padding-top: 300px;
     font-size: 4rem;
   }
 
+  #about-us-text h2 {
+    font-size: 1.9rem;
+  }
+
+  #about-parent-div p {
+    font-size: 1.1rem;
+  }
+
+  #tool-text h2 {
+    font-size: 1.9rem;
+  }
+
+  #tool-img-text {
+    height: 140px;
+  }
+
+  #tool-div img {
+    margin-top: 30px;
+  }
+
   .martini-div {
-    margin-bottom: 10px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
   }
 
   #welcome-msg {
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
-  #about-us-text {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
+  
+
+  /* #tool-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } */
 
 
 /**********************tools******************/
 
 #tool-text {
-  margin-left: 80px;
-  margin-right: 80px;
+  /* margin-left: 80px;
+  margin-right: 80px; */
 }
 
  #martini {
-     padding-top: 0;
+     /* padding-top: 0; */
  }
 
 /***************************recipes-desktop*****************/
 
+#all-recipes-container h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+#random-tool p {
+  font-size: 1.1rem;
+  padding: 20px 0;
+  line-height: 25px;
+}
+
+}

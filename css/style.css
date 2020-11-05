@@ -5,6 +5,10 @@ body {
   text-align: center;
 }
 
+main {
+  min-height: 650px;
+}
+
 /****************************nav-bar******************/
 
 
@@ -123,15 +127,23 @@ footer {
 /****************************sign-up-page*****************/
 
 .signup {
-  height: 550px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
 }
 
 .signup h2 {
   text-align: center;
   font-size: 2rem;
-  padding-top: 45px;
-  padding-bottom: 15px;
+  padding-top: 80px;
+  /* padding-bottom: 15px; */
   font-weight: 600;
+}
+
+.form-wrapper {
+margin-top: 50px;
 }
 
 .signup-form {
@@ -172,12 +184,11 @@ input {
 }
 
 .message-container {
-  
   display: flex;
   justify-content: center;
   flex-direction: column;
   
-  width: 400px;
+  margin: 0 auto;
 }
 
 /****************************login-page*****************/
@@ -185,6 +196,10 @@ input {
 
 .login {
   height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
   
 }
 .login-form {

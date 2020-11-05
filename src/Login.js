@@ -31,6 +31,8 @@ class Login {
     else {
       p.textContent = `Hello ${user.name}!`;
       p.classList.add('correct-message');
+      p.classList.add('alert-success');
+      p.classList.add('alert');
       this.redirect();
     }
 

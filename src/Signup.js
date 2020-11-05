@@ -55,6 +55,9 @@ class Signup {
   setErrorMessages = () => {
 
     this.errorsWrapper.innerHTML = "";
+     this.errorsWrapper.classList.add('alert');
+     this.errorsWrapper.classList.add('alert-danger');
+
 
     const errorsObj = validator.getErrors();
 
@@ -63,7 +66,6 @@ class Signup {
     errorStringsArr.forEach( (str) => {
       const p = document.createElement('p');
       p.textContent = str;
-
       this.errorsWrapper.appendChild(p);
     })
   }
@@ -99,7 +101,7 @@ class Signup {
 
   redirect = () => {
     setTimeout( function () {
-      location.assign("./index.html")
+      location.assign("./login.html");
     }, 2000)
   }
 

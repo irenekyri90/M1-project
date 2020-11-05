@@ -1,6 +1,6 @@
 # The Cocktail Lab - M1 Project
 
-(image)
+![about-us-cocktails](/Users/irenekyritsis/Desktop/ironhack-projects/project-1-images/about-us-cocktails.jpg)
 
 ## Description
 
@@ -55,4 +55,8 @@ The **MVP** will include:
   
 
 ## Links
+
+[Wireframe](https://www.figma.com/file/YN6dr07kChl1gnxjyorAY1/Cocktail-lab-project?node-id=0%3A1)
+
+[Trello](https://trello.com/b/a5GVzeYw/project-1)
 

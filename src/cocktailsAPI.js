@@ -1,6 +1,6 @@
 "use strict";
 
-fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b")
+fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=p")
   .then(response => {
     console.log(response);
     console.log(response.ok);

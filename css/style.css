@@ -5,9 +5,7 @@ body {
   text-align: center;
 }
 
-main {
-  min-height: 650px;
-}
+
 
 /****************************nav-bar******************/
 
@@ -127,11 +125,12 @@ footer {
 /****************************sign-up-page*****************/
 
 .signup {
-  height: 670px;
+  /* height: 670px; */
   display: flex;
   flex-direction: column;
   align-items: space-around;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .signup h2 {
@@ -195,7 +194,6 @@ input {
 /****************************login-page*****************/
 
 .login {
-  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: space-around;
@@ -327,7 +325,7 @@ input {
 /*************************recipes*********************/
 
 #nav {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
 }
 
 .bg-dark {
@@ -423,7 +421,7 @@ input {
   flex-grow: 1;
   height: 40px;
   background-color: #010101;
-  border: 1px solid white;
+  border: 1px solid #010101;
   color: white;
 
 }
@@ -431,7 +429,7 @@ input {
 #testBtn {
   color: white;
   background-color: #010101;
-  border: 1px solid white;
+  border: 1px solid #010101;
   
   width: 100px;
   font-size: 1.2rem;
@@ -545,6 +543,10 @@ article ul {
 
 
 @media (min-width: 769px) {
+
+  main {
+    min-height: 650px;
+  }
   
     /**********************homepage******************/
   
@@ -618,9 +620,14 @@ article ul {
     margin-top: 30px;
   }
 
-/**********************tools******************/
+/**********************login/signup******************/
+.login {
+  height: 670px;
+}
 
-
+.signup {
+  height: 650px;
+}
 /***************************recipes-desktop*****************/
 
 #recipes-welcome-msg {

@@ -5,10 +5,7 @@ body {
   text-align: center;
 }
 
-
-
 /****************************nav-bar******************/
-
 
 .nav-icon {
   color: white;
@@ -46,7 +43,7 @@ h1 {
   text-shadow: 1px -1px 0px #310306;
 }
 .bg-dark {
-    background-color: #14140c!important;
+  background-color: #14140c !important;
 }
 
 /* .navbar-dark {
@@ -84,11 +81,11 @@ a {
 }
 
 .grow h2 {
-    transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .grow h2:hover {
-    transform: scale(1.2);  
+  transform: scale(1.2);
 }
 
 .fa-glass-martini-alt {
@@ -142,7 +139,7 @@ footer {
 }
 
 .form-wrapper {
-margin-top: 50px;
+  margin-top: 50px;
 }
 
 .signup-form {
@@ -156,7 +153,7 @@ margin-top: 50px;
 input {
   width: 250px;
   height: 35px;
-  border: 2px solid #B0B0B0;
+  border: 2px solid #b0b0b0;
 }
 
 .sign-log-btn {
@@ -186,10 +183,14 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+
   margin: 0 auto;
 }
 
+.alert-danger {
+  width: 400px;
+  margin: 0 auto;
+}
 /****************************login-page*****************/
 /****************************login-page*****************/
 
@@ -198,7 +199,6 @@ input {
   flex-direction: column;
   align-items: space-around;
   justify-content: center;
-  
 }
 .login-form {
   height: 320px;
@@ -237,9 +237,8 @@ input {
   font-size: 2rem;
   letter-spacing: 3px;
   font-weight: 600;
-  text-shadow: 2px 2px 0px rgba(107,47,35,0.72);
+  text-shadow: 2px 2px 0px rgba(107, 47, 35, 0.72);
 }
-
 
 #about-parent-div {
   height: 1100px;
@@ -247,7 +246,6 @@ input {
   flex-direction: column;
   justify-content: space-around;
   margin: 20px 0;
-  
 }
 
 #about-us-text {
@@ -270,9 +268,7 @@ input {
   letter-spacing: 1.2px;
 }
 
-
 /****************************tool-section*****************/
-
 
 #tool-text {
   height: 500px;
@@ -300,12 +296,11 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 30px;
 }
-
 
 #explore-btn {
   background-color: #14140c;
@@ -315,11 +310,11 @@ input {
 }
 
 #explore-btn {
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 #explore-btn:hover {
-  transform: scale(1.2);  
+  transform: scale(1.2);
 }
 
 /*************************recipes*********************/
@@ -329,7 +324,7 @@ input {
 }
 
 .bg-dark {
-  background-color: #010101!important;
+  background-color: #010101 !important;
 }
 
 #recipes-header {
@@ -343,21 +338,19 @@ input {
 }
 
 #recipes-welcome-msg {
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 3px;
-    line-height: 40px;
-    
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 40px;
 }
 
 #recipes-header {
   padding: 30px;
-  
 }
 
 #random-drink-container {
-    display: none;
+  display: none;
 }
 
 #test-container {
@@ -390,13 +383,12 @@ input {
   letter-spacing: 3px;
 }
 
-
 #randomDiv {
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 1px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 1px;
 }
 
 #random-tool {
@@ -404,7 +396,6 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 #random-tool p {
@@ -413,8 +404,7 @@ input {
 }
 
 #search-tool {
-  display:flex;
-  
+  display: flex;
 }
 
 #search-bar {
@@ -423,19 +413,17 @@ input {
   background-color: #010101;
   border: 1px solid #010101;
   color: white;
-
 }
 
 #testBtn {
   color: white;
   background-color: #010101;
   border: 1px solid #010101;
-  
+
   width: 100px;
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
-
 
 #randomBtn {
   border: none;
@@ -443,9 +431,8 @@ input {
   font-size: 3.5rem;
   color: #14140c;
   padding-top: 15px;
-  outline: none;	        
+  outline: none;
 }
-
 
 .rotate-center {
   overflow: hidden;
@@ -456,7 +443,6 @@ input {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
 }
-
 
 #randomDrink {
   display: flex;
@@ -472,7 +458,7 @@ input {
   display: none;
   color: 14140c;
   background-color: white;
-  
+
   border-color: #14140c;
   width: 140px;
   height: 35px;
@@ -483,21 +469,21 @@ input {
   margin-bottom: 20px;
 }
 
-#hide:hover{
-  background-color: #14140c;;
+#hide:hover {
+  background-color: #14140c;
   color: white;
   /* font-weight: 600; */
   border: 2px solid white;
 }
 
 article {
-    text-align: left;
-    color: #14140c;
-    width: 320px;
-    background-color: white;
-    margin: 20px 15px;
-    border: solid 1px #14140c;
-    /* box-shadow: 5px 5px 5px -1px rgba(89,89,89,0.49); */
+  text-align: left;
+  color: #14140c;
+  width: 320px;
+  background-color: white;
+  margin: 20px 15px;
+  border: solid 1px #14140c;
+  /* box-shadow: 5px 5px 5px -1px rgba(89,89,89,0.49); */
 }
 
 article img {
@@ -505,7 +491,6 @@ article img {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: solid 1px #14140c;
-  
 }
 
 article p {
@@ -513,15 +498,14 @@ article p {
   text-align: center;
   line-height: 25px;
   letter-spacing: 1px;
-  color:	#696969;
+  color: #696969;
 }
 
 article ul {
   text-align: center;
   line-height: 23px;
-  color: 		#696969;
+  color: #696969;
 }
-
 
 .drink h3 {
   color: #14140c;
@@ -532,24 +516,19 @@ article ul {
   padding-top: 70px;
 }
 
-
 #err-msg {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
-
-
-
 @media (min-width: 769px) {
-
   main {
     min-height: 650px;
   }
-  
-    /**********************homepage******************/
-  
+
+  /**********************homepage******************/
+
   h1 {
     font-size: 4rem;
     letter-spacing: 10px;
@@ -572,8 +551,7 @@ article ul {
     font-size: 1.8rem;
   }
 
-
-/**********************about-us******************/
+  /**********************about-us******************/
 
   #about-parent-div {
     height: 1500px;
@@ -620,31 +598,30 @@ article ul {
     margin-top: 30px;
   }
 
-/**********************login/signup******************/
-.login {
-  height: 670px;
-}
+  /**********************login/signup******************/
+  .login {
+    height: 670px;
+  }
 
-.signup {
-  height: 650px;
-}
-/***************************recipes-desktop*****************/
+  .signup {
+    height: 650px;
+  }
+  /***************************recipes-desktop*****************/
 
-#recipes-welcome-msg {
-  font-size: 3rem;
-  font-weight: 600;
-}
+  #recipes-welcome-msg {
+    font-size: 3rem;
+    font-weight: 600;
+  }
 
-#all-recipes-container h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 5px;
-}
+  #all-recipes-container h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+  }
 
-#random-tool p {
-  font-size: 1.1rem;
-  padding: 20px 0;
-  line-height: 25px;
-}
-
+  #random-tool p {
+    font-size: 1.1rem;
+    padding: 20px 0;
+    line-height: 25px;
+  }
 }

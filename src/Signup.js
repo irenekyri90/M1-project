@@ -55,18 +55,21 @@ class Signup {
   setErrorMessages = () => {
 
     this.errorsWrapper.innerHTML = "";
-     this.errorsWrapper.classList.add('alert');
-     this.errorsWrapper.classList.add('alert-danger');
-
+    this.errorsWrapper.classList = '';
+     
 
     const errorsObj = validator.getErrors();
 
     const errorStringsArr = Object.values( errorsObj );
 
     errorStringsArr.forEach( (str) => {
+
       const p = document.createElement('p');
       p.textContent = str;
+      this.errorsWrapper.classList.add('alert');
+      this.errorsWrapper.classList.add('alert-danger');
       this.errorsWrapper.appendChild(p);
+      
     })
   }
 
